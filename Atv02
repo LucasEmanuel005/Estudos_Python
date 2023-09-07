@@ -1,0 +1,118 @@
+#Lógica de Programação 
+#Atividade02
+
+#01- Escreva um algoritmo capaz de calcular a divisão de dois números e apresente o resultado. 
+
+#Phyton: 
+#Declaração de variáveis
+num1=float
+num2=float
+divisao=float
+
+#Apresentação do programa
+print('   Programa para calcular a divisão de dois números ') 
+
+#Coleta de informação
+num1=float(input("Digite um número, que será o dividendo: ")) 
+num2=float(input("Digite outro número, que será o divisor: ")) 
+
+#Divisao
+divisao=num1/num2  
+
+#Apresentacao do resultado
+print('A divisão de ' , num1 , ' por ' , num2 , ' é ' , divisao , '.') 
+
+ 
+
+#2- Escreva um algoritmo para calcular a média aritmética de 3 notas e apresentar o resultado. 
+
+#Phyton: 
+
+#Declaração de variáveis
+nota1=float 
+nota2=float 
+nota3=float 
+media=float  
+
+#Apresentação do programa
+print('   Programa para calcular a média de 3 notas ') 
+
+#Coleta de informação
+nota1=float(input("Digite a primeira nota: ")) 
+nota2=float(input("Digite a segunda nota: "))
+nota3=float(input("Digite a terceira nota: "))  
+
+#Calculo da media
+media=(nota1+nota2+nota3)/3 
+
+#Apresentacao do resultado
+print('Sua média é: ' , media , '.') 
+
+ 
+
+#3- Escreva um algoritmo que seja capaz de calcular o exponencial de um número pelo outro. 
+
+#Phyton:
+
+#Declaração de variáveis
+num1=float  
+num2=float 
+exponencial=float   
+
+#Apresentação do programa
+print('   Programa para calcular uma exponencial   ') 
+
+#Coleta de informação
+num1=float(input('Digite um número, que será a base: ')) 
+num2=float(input('Digite um número, que será o expoente: '))   
+
+#Calculo da exponencial
+exponencial=num1**num2  
+
+#Apresentacao do resultado
+print('O resultado é ' , exponencial , '.')   
+
+ 
+
+
+#4- Escreva um algoritmo para calcular sua idade daqui a 20 anos. 
+
+#Phyton:
+
+#Declaração de variáveis
+idade=int 
+idade2=int  
+
+#Apresentação do programa
+print('   Programa para calcular a idade após 20 anos.   ') 
+
+#Coleta de informação
+idade=int(input('Digite sua idade: ')) 
+
+#Calculo da idade no futuro
+idade2=idade+20  
+
+#Apresentacao do resultado
+print('Após se passarem 20 anos sua idade será: ' , idade2, '.') 
+
+ 
+## Operadores, expressões e teste de mesa.
+
+#Qual o valor de X? 
+
+# X = (2*(6^3))/(4+2*(5/2))
+# X = (2 * (2*3) * (2*3) * (2*3)) / (4 + 5)  
+# X = (2 * 2*3 * 2*3 * 2*3)/ (3*3) 
+# X = 16*3 
+# X = 48  
+
+#Phyton:
+
+#Declaração de variáveis
+x=float
+
+#Calculo
+x = (2*6**3)/(4+2*(5/2)) 
+
+#Apresentacao do resultado
+print('O resultado da expressão X = (2*(6^3))/(4+2*(5/2)) é ' , x)
