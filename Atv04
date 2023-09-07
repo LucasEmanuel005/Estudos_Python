@@ -1,0 +1,91 @@
+#1- Escreva um programa receba um número inteiro n na entrada e imprima n! (fatorial) na saída.  
+
+#Phyton: 
+#Declaração de variáveis
+num=int
+fat=int
+
+#Apresentação do programa
+print('   Programa para calcular o fatorial de um número, tal que esse numero esteja contido no conjunto de números naturais. ') 
+
+#Coleta de informação
+num=int(input("Digite um número para calcular o seu valor fatorial")) 
+
+#Guardando o número digitado.
+num1=num 
+
+#Atribuição para caso o numero digitado seja 0.
+fat=1 
+  
+#Validação
+
+# num>0 -> calcula-se ou num=0 -> fat=1
+if (num >= 0): 
+    while(num>0):  
+        #calculo        
+        fat = num * fat 
+        num -= 1  
+    print(num1 , " fatorial é " , fat) 
+    
+# num<0 -> Não se calcula
+else: 
+    print('O número (' , num1 , ') digitado não pertencer ao conjunto dos números naturais.')
+    
+    
+
+
+
+ 
+
+ 
+#2- Escreva um programa que receba um número inteiro, multiplique com o resultado anterior e mostre o resultado, para os números que forem digitados até que se digite “0” (zero). 
+#Phyton: 
+#Declaração de variáveis
+num1=float
+num2=float
+mul=float
+
+#Apresentação do programa
+print('   Programa para calcular a multiplicação de um número pelo digitado anteriormente. Para finalizar digite 0.') 
+
+#Coleta de informação, valor para iniciar o loop.
+num1=float(input("Digite um número.")) 
+
+
+#Validação 
+if (num1 != 0):
+    #loop
+    while(num1 != 0 or num2 != 0):  
+        num2=float(input("Digite um número.")) 
+        mul = num1 * num2 
+        print('O resultado de', num1 , '*' , num2 , 'é' , mul)
+        num1 = mul 
+
+#Apresentacao do resultado
+print('Você digitou 0. O programa foi finalizado com sucesso.')
+
+    
+
+ 
+
+
+
+#Refaça o exercício do cálculo da média dos alunos (média = (nota1 + nota2) / 2) validando os valores das notas entradas, que devem ser positivos e menores, ou iguais, do que 10. 
+
+ 
+
+
+#3- Refaça o exercício do cálculo da média dos alunos (média = (nota1 + nota2) / 2) validando os valores das notas entradas, que devem ser positivos e menores, ou iguais, do que 10. 
+
+#Phyton: 
+#Declaração de variáveis
+nota1=float
+nota2=float
+media=float
+
+#Apresentação do programa
+print('   Programa para calcular a média sendo que as notas que devem ser positivas e menores, ou iguais, a 10.') 
+
+#Coleta de informação, valor para iniciar o loop.
+nota1=float(input("Digite a primeira nota.")) 
+nota2=float(input("Digite a segunda nota.")) 
