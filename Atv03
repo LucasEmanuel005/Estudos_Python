@@ -1,0 +1,89 @@
+#Lógica de Programação 
+#Atividade 03 – Algoritmo
+
+#1. Escreva um programa que peça um número inteiro e informe se é par ou impar.  
+
+
+#Phyton: 
+#Declaração de variáveis
+num=float 
+resp=int 
+
+#Apresentação do programa
+print('Programa para informar se um número é par ou impar.')
+
+#Coleta de informação
+num=float(input('Digite um número, para saber se é par ou impar')) 
+
+#Divisao
+resp=num%2 
+
+
+#Validação e apresentação do resultado
+if(resp == 0): 
+  print(num , 'é um número par.') 
+else: 
+  print(num , 'é um número impar.')  
+
+
+
+
+#2. Escreva um programa que peça dois números inteiros e imprima o maior deles.  
+
+#Phyton: 
+#Declaração de variáveis
+num1=float
+num2=float 
+
+
+#Apresentação do programa
+print('Aplicação para validar dois numeros qual é o maior ou se são iguais.') 
+
+#Coleta de informação
+num1=float(input('Digite o primeiro número:')) 
+num2=float(input('Digite o segundo número:')) 
+
+#Validação e apresentação do resultado
+if(num1 == num2):
+  print(num1 , 'é igual ao número' , num2) 
+else: 
+  if(num1 > num2): 
+    print(num1 , 'é maior que o número' , num2)  
+  else: 
+    print(num2 , 'é maior que o número' , num1) 
+
+
+
+#3. Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido. 
+
+
+#Phyton: 
+#Declaração de variáveis
+letra=str 
+
+#Apresentação do programa
+print('Aplicação para validar se a letra digitada corresponde a masculino ou feminino.') 
+
+#Coleta de informação
+letra=input('Digite a letra:') 
+
+
+#Validação e apresentação do resultado
+if(letra == 'F' or letra == 'f'): 
+  print(letra , 'Feminino') 
+else: 
+  if(letra == 'M' or letra == 'm'): 
+    print(letra , '- Masculino') 
+  else: 
+    print('Sexo inválido.') 
+
+
+
+
+
+
+
+
+
+
+
