@@ -103,5 +103,5 @@ while (nota2 > 10 or nota2 < 0):
 #Calculo da media
 media = (nota1 + nota2)/2
 
-#
+#Apresentação do resultado
 print("Sua média é " , media)
