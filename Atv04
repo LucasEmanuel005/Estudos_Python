@@ -87,5 +87,21 @@ media=float
 print('   Programa para calcular a média sendo que as notas que devem ser positivas e menores, ou iguais, a 10.') 
 
 #Coleta de informação, valor para iniciar o loop.
-nota1=float(input("Digite a primeira nota.")) 
-nota2=float(input("Digite a segunda nota.")) 
+nota1=float(input("Digite a primeira nota."))
+
+#Validacao
+while (nota1 > 10 or nota1 < 0):
+    nota1=float(input("Nota invalida, digite uma nota entre 0 e 10."))
+
+#Coleta de informação, valor para iniciar o loop.
+nota2=float(input("Digite a segunda nota."))
+
+#Validacao
+while (nota2 > 10 or nota2 < 0):
+    nota2=float(input("Nota invalida, digite uma nota entre 0 e 10.")) 
+
+#Calculo da media
+media = (nota1 + nota2)/2
+
+#
+print("Sua média é " , media)
