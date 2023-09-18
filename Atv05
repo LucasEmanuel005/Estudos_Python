@@ -1,0 +1,41 @@
+#Exemplo 2
+#n = int(input("Entre com um número inteiro: "))
+#for i in range (1,11):
+#    print(n,"x",i,"=",i*n)
+
+
+#1- Reescreva o exemplo 2 para que mostre a tabuada apenas com os valores pares.
+
+#Apresentação do programa
+print("Tabuada de números pares")
+
+#Coleta de informação
+n = int(input("Entre com um número inteiro: "))
+
+#loop tabuada 
+for i in range (0,11,2):
+    print(n,"x",i,"=",i*n)
+
+
+
+
+#2- Escreva um programa que receba um texto e mostre as vogais deste texto e qual a posição onde estão. 
+
+#Declaração de vetor
+lista = []
+
+#Apresentação do programa
+print("Programa que armazenada uma frase em um vetor e apresenta as vogais da frase e suas posições no vetor.")
+
+#Coleta de informação e armazenando num vetor
+lista = input("Digite uma frase")
+
+#Coletando o tamanho do vetor
+tam=len(lista)
+
+#Percorrendo o vetor
+for n in range (0,tam):
+    #Validando se é vogal
+    if(lista[n] == "a" or lista[n] == "e" or lista[n] == "i" or lista[n] == "o" or lista[n] == "u" or lista[n] == "A" or lista[n] == "E" or lista[n] == "I" or lista[n] == "O" or lista[n] == "U"):
+        #Apresentando as vogais e suas posicoes 
+        print("A vogal", lista[n], "está armazenada na posição" , n)
